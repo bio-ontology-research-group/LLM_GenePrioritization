@@ -1,4 +1,7 @@
 #This code interacts with openAI's API to use GPT with zero-shot prompting.
+#run this code as: python zero.shot.py prompt_index start_patient end_patient
+#example:  python zero.shot.py 0 1 101
+
 import openai
 import os
 import pandas as pd
@@ -7,7 +10,7 @@ import sys
 
 openai.api_key = 'your_openAI_API_key'
 
-def get_completion(prompt, model="gpt-4"): #gpt-3.5-turbo
+def get_completion(prompt, model="gpt-4"): 
 
 	messages = [{"role": "user", "content": prompt}]
 	try:
