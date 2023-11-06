@@ -1,3 +1,4 @@
+#This code interacts with openAI's API to use GPT with one-shot prompting.
 import openai
 import os
 import pandas as pd
