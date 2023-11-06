@@ -1,4 +1,6 @@
 #This code interacts with openAI's API to use GPT with one-shot prompting.
+#run this code as: python one_shot.py prompt_index start_patient end_patient
+#example:  python one_shot.py 0 1 101
 import openai
 import os
 import pandas as pd
@@ -8,8 +10,7 @@ import sys
 
 openai.api_key = 'your_OpenAI_API_key'
 
-def get_completion(prompt, model="gpt-4"): #"gpt-3.5-turbo"):
-
+def get_completion(prompt, model="gpt-4"): 
         messages=[
     {
       "role": "system",
@@ -36,7 +37,6 @@ for i in range(int(sys.argv[2]),int(sys.argv[3])):
         response = get_completion(prompt)
         file = open("./responses_one_shot/gene"+str(int(sys.argv[1])*5+5)+"/r_"+str(i)+".txt", "w")
         if response is not None:
-                #file.write(response)
                 gene_names = re.findall(r'\d+\.\s+([^:\s]+)[:\s]', response)
                 numbered_list = "\n".join(f"{gene}\t{t+1}" for t, gene in enumerate(gene_names))
                 file.write(numbered_list)
