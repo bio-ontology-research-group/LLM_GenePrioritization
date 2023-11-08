@@ -1,7 +1,7 @@
 from unidecode import unidecode
 
 #cnt	ID      geneSymbol      phenoLabels     phenoClasses    sex     zygosityLabel
-f=open("final_clinvar_dataset.txt","r")
+f=open("Clinvar_100.txt","r")
 phens=[]
 genes=[]
 import sys
@@ -26,7 +26,7 @@ for phen in phens[0][1].split('|'):
 	x+='"'+phen+'", '
 x=x[:-2]+'. Rank these genes according to their association with the symptoms of the patient:'
 
-f=open('../hgnc.genes.txt')
+f=open('hgnc.genes.txt')
 for l in f:
 	p=l.rstrip()
 	if p.isnumeric():
