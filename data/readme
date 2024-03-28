@@ -1,1 +1,2 @@
 dataset: this folder contains GPCARDs, PAVS and ClinVar datasets used in this study
+sample_queries: This folder contains a sample input file that contains sample prompts used for the LLMs.
