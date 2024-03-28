@@ -8,18 +8,13 @@ import sys
 import random
 idx=int(sys.argv[1])
 
-#for l in f:
 l=f.readlines()[(idx-1)]
 
 l=unidecode(l)
 p=l.rstrip().split('\t')
-#if len (p)<6:
-#	sys.exit("LEN issue")
 phens.append([p[1],p[2]])
 gene=p[1]
 
-
-#random.shuffle(phens)
 x="A  patient who is suspected of having a genetic disease, presented with these clinical symptoms: "
 for phen in phens[0][1].split('|'):
 	phen=phen[0]+phen[1:]
