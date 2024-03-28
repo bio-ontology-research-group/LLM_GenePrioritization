@@ -1,4 +1,4 @@
 dataset: this folder contains GPCARDs, PAVS and ClinVar datasets used in this study
 sample_queries: This folder contains a sample input file that contains sample prompts used for the LLMs.
-hgnc.genes.txt: This document contains all the gene symbold from the HGNC database. This file is utilized by our scripts to randomly select N number of genes to conduct experiments.
-yaml.txt : This file contains the path to the yaml files, necessary to run the algorithms from the Exomiser tool.
+hgnc.genes.txt: This file contains all the gene symbold from the HGNC database. This file is utilized by our scripts to randomly select N number of genes to conduct experiments.
+yamls.txt : This file contains the path to the yaml files, necessary to run the algorithms from the Exomiser tool.
