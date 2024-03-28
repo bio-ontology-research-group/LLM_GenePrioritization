@@ -14,3 +14,6 @@
 
 - Access to the [ChatGPT](https://platform.openai.com/docs/introduction) through the API.
 - Installation of other LLM and tools ([Falcon180B](https://falconllm.tii.ae/falcon-180b.html), [Exomiser](https://www.sanger.ac.uk/tool/exomiser/), [PHIVE](https://exomiser.github.io/Exomiser/manual/7/quickstart/#phive), [Phenix](https://exomiser.github.io/Exomiser/manual/7/quickstart/#phenix), and [exomeWalker](https://exomiser.github.io/Exomiser/manual/7/quickstart/#exomewalker))
+
+
+## How to run
