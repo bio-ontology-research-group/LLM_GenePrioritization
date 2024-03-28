@@ -17,5 +17,13 @@
 
 
 ## How to run
-- **Generate prompts:
+- Generate prompts:
   run: python questions_clinvar.py
+- Run openAI's GPT:
+  Step1. Create an output folder called: responses_one_shot
+  Step2. python one_shot.py
+- Evaluate:
+  Step1. python stat.py
+  Step2. python AUPR.py
+  Step3. python rank_auc.py
+  
