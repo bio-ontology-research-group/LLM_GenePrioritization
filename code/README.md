@@ -21,10 +21,9 @@
   run: python questions_clinvar.py
 
 -  Run openAI's GPT:
-  
-  Step1. Create an output folder called: responses_one_shot
-
-  Step2. python one_shot.py
+   Step1. Create an output folder called: responses_one_shot
+   Step2. Please edi the one_shot.py script to palce your OpenAI key.
+   Step2. python one_shot.py
 
 - Evaluate:
   Step1. python stat.py
