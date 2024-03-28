@@ -1,1 +1,1 @@
-These sample files called q1.txt and q2.txt contain prompts of patient#1 and patient#2. Each line in the files corresponds to a single experiment with an N [4-99] number of randomly selected genes from the HGNC dataset.
+These sample files called q_1.txt and q_2.txt contain prompts of patient#1 and patient#2. Each line in the files corresponds to a single experiment with an N [4-99] number of randomly selected genes from the HGNC dataset.
