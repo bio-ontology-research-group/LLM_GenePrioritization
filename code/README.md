@@ -17,3 +17,5 @@
 
 
 ## How to run
+- **Generate prompts:
+  run: python questions_clinvar.py
