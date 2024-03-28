@@ -31,7 +31,7 @@ def get_completion(prompt, model="gpt-4"):
 #-------main-----------------------
 for i in range(int(sys.argv[2]),int(sys.argv[3])):
         print ("Patient:"+str(i))
-        f=open ("./questions/q_"+str(i)+".txt","r")
+        f=open ("./data/sample_queries/q_"+str(i)+".txt","r")
         prompt=f.readlines()[int(sys.argv[1])]
         f.close()
         response = get_completion(prompt)
